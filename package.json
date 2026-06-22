@@ -1,0 +1,37 @@
+{
+  "name": "cli-conta-palavras",
+  "version": "1.0.0",
+  "description": "Biblioteca de linha de comando para contar palavras repetidas em um texto, utilizando Node.js. O projeto lê um arquivo de texto, processa o conteúdo para identificar palavras e conta quantas vezes cada palavra aparece, ignorando palavras com menos de 3 caracteres e caracteres especiais.",
+  "main": "src/cli.js",
+  "author": "Carla Santos",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node src/cli.js",
+    "dev": "cross-env NODE_ENV=development node src/cli.js -t arquivos/texto-web.txt",
+    "dev:error": "cross-env NODE_ENV=development node src/cli.js -t arquivos/fantasma.txt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carla-santos/cli-conta-palavras.git"
+  },
+  "keywords": [
+    "nodejs",
+    "biblioteca",
+    "palavras repetidas",
+    "contagem de palavras",
+    "linha de comando"
+  ],
+  "bugs": {
+    "url": "https://github.com/carla-santos/cli-conta-palavras/issues"
+  },
+  "homepage": "https://github.com/carla-santos/cli-conta-palavras/issues#readme",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^15.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
