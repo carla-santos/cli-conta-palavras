@@ -11,10 +11,6 @@ import { generateTextReport } from './report-generator.js';
 export async function createTextFile(wordList, destinationPath = './contador-palavras.txt') {
   const reportContent = generateTextReport(wordList);
 
-  // const formattedText = wordList
-  //   .map((item) => `Palavra: '${item.word}' | Repetições: ${item.count}`)
-  //   .join('\n');
-
   // Criamos a pasta de destino caso não exista
   await mkdir(dirname(destinationPath), { recursive: true });
 
