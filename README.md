@@ -125,12 +125,13 @@ npm run dev:error
 ┃ ┃     ┗ # Infraestrutura: Escrita de arquivos e criação de diretórios
 ┃ ┃ ┣ 📜 report-generator.js
 ┃ ┃ ┃   ┗ # Cria um relatório textual
+┃ ┃ ┣ 📜 stop-words.js
+┃ ┃ ┃   ┗ # Lista de palavras para eliminar da contagem
 ┃ ┗ 📜 cli.js
 ┃     ┗ # Entry point (Ponto de entrada) da aplicação
 ┣ 📜 package.json
 ┗ 📜 README.md
 ```
-
 ---
 
 ## ✨ Funcionalidades
