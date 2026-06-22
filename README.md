@@ -104,29 +104,29 @@ npm run dev:error
 
 ## 📂 Arquitetura do Projeto
 
-```text
+```bash
 📦 cli-conta-palavras
 ┣ 📂 arquivos
-┃ ┗ 📜 Textos de exemplo para testes
+┃ ┗ 📜 # Textos de exemplo para testes
 ┣ 📂 resultados
-┃ ┗ 📜 Pasta gerada automaticamente com os relatórios
+┃ ┗ 📜 # Pasta gerada automaticamente com os relatórios
 ┣ 📂 src
 ┃ ┣ 📂 core
 ┃ ┃ ┗ 📜 word-counter.js
-┃ ┃    ┗ Regra de negócio pura (Contagem via Regex e Reduce)
+┃ ┃    ┗ # Regra de negócio pura (Contagem via Regex e Reduce)
 ┃ ┣ 📂 utils
 ┃ ┃ ┣ 📜 commander-config.js
-┃ ┃ ┃   ┗ Configuração do Commander.js
+┃ ┃ ┃   ┗ # Configuração do Commander.js
 ┃ ┃ ┣ 📜 handle-cli-error.js
-┃ ┃ ┃   ┗ Tratamento centralizado de exceções
+┃ ┃ ┃   ┗ # Tratamento centralizado de exceções
 ┃ ┃ ┣ 📜 fs-read-file.js
-┃ ┃ ┃   ┗ Infraestrutura: Leitura de arquivos (fs)
+┃ ┃ ┃   ┗ # Infraestrutura: Leitura de arquivos (fs)
 ┃ ┃ ┗ 📜 fs-write-file.js
-┃ ┃     ┗ Infraestrutura: Escrita de arquivos e criação de diretórios
+┃ ┃     ┗ # Infraestrutura: Escrita de arquivos e criação de diretórios
 ┃ ┃ ┣ 📜 report-generator.js
-┃ ┃ ┃   ┗ Cria um relatório textual
+┃ ┃ ┃   ┗ # Cria um relatório textual
 ┃ ┗ 📜 cli.js
-┃     ┗ Entry point (Ponto de entrada) da aplicação
+┃     ┗ # Entry point (Ponto de entrada) da aplicação
 ┣ 📜 package.json
 ┗ 📜 README.md
 ```
