@@ -1,5 +1,6 @@
 import { writeFile, mkdir } from 'node:fs/promises';
 import { dirname } from 'node:path';
+import { generateTextReport } from './report-generator.js';
 
 /**
  * Cria um arquivo de texto com os resultados da contagem.
@@ -8,14 +9,15 @@ import { dirname } from 'node:path';
  */
 
 export async function createTextFile(wordList, destinationPath = './contador-palavras.txt') {
-  // O writeFile exige uma string. Transformamos o array em uma string.
-  const formattedText = wordList
-    .map((item) => `Palavra: '${item.word}' | Repetições: ${item.count}`)
-    .join('\n');
+  const reportContent = generateTextReport(wordList);
+
+  // const formattedText = wordList
+  //   .map((item) => `Palavra: '${item.word}' | Repetições: ${item.count}`)
+  //   .join('\n');
 
   // Criamos a pasta de destino caso não exista
   await mkdir(dirname(destinationPath), { recursive: true });
 
   // Escrevemos o conteúdo no arquivo
-  await writeFile(destinationPath, formattedText, { encoding: 'utf8' });
+  await writeFile(destinationPath, reportContent, { encoding: 'utf8' });
 }
