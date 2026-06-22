@@ -17,13 +17,26 @@ No entanto, o código foi totalmente reescrito e refatorado adotando padrões de
 
 ---
 
-## 🛠️ Tecnologias e Bibliotecas
+## 🛠️ Tecnologias e Bibliotecas atuais
 
 Além das APIs nativas do Node.js (como `node:fs/promises` para manipulação assíncrona de arquivos e `node:path`), o projeto utiliza as seguintes bibliotecas modernas para entregar uma experiência de terminal profissional:
 
 - **[commander](https://www.npmjs.com/package/commander)**: Criação da interface de linha de comando, tratamento de flags (parâmetros) e geração automática do menu de ajuda (`--help`).
 - **[Chalk](https://www.npmjs.com/package/chalk)** - Estilização e coloração das mensagens no terminal, melhorando a UX e o feedback visual de erros e sucessos.
 - **[Cross-env](https://www.npmjs.com/package/cross-env)**: Padronização da injeção de variáveis de ambiente (`NODE_ENV`), garantindo que os scripts funcionem perfeitamente em qualquer sistema operacional (Windows, macOS ou Linux).
+
+### 🔧 Melhorias técnicas planejadas
+
+**TypeScript**
+- Migração gradual do código JavaScript para TypeScript
+- Tipagem estática das estruturas de dados
+- Maior segurança durante o desenvolvimento
+- Melhor suporte de IDEs e autocompletar
+- Redução de erros em tempo de execução
+- Qualidade de Código
+- Cobertura de testes automatizados
+- Integração contínua (CI)
+- Padronização com ESLint e Prettier
 
 ---
 
@@ -136,17 +149,36 @@ npm run dev:error
 
 ## ✨ Funcionalidades
 
+### Disponíveis atualmente
+
 - Leitura de arquivos `.txt`
-- Ignora pontuações automaticamente
-- Desconsidera palavras com menos de 3 caracteres
+- Normalização automática do texto (remoção de pontuações e caracteres especiais)
 - Contagem de frequência de palavras
-- Geração de relatórios
-- Exportação automática para arquivo
+- Ordenação por número de ocorrências (maior → menor)
+- Desconsideração de palavras com menos de 3 caracteres
+- Filtro de palavras irrelevantes (stop words)
+- Geração de relatórios em formato texto (.txt)
+- Criação automática de diretórios de saída
 - Interface CLI amigável
 - Tratamento robusto de erros
-- Compatibilidade multiplataforma
+- Compatibilidade multiplataforma (Windows, Linux e macOS)
+
+### 🚧 Planejamento para próximas versões
+
+- Exportação dos resultados em formato JSON
+- Configuração personalizada de stop words via terminal
+- Carregamento de listas de palavras ignoradas a partir de arquivos externos
+- Exportação para múltiplos formatos (JSON, CSV e HTML)
+- Limitação configurável do número de resultados exibidos
+  
+---
+
+## Releases
+
+✅ [v1.0.0 — Versão inicial](https://github.com/carla-santos/cli-conta-palavras/releases/tag/v1.0.0)
 
 ---
+
 
 ## 💜 Autor
 
