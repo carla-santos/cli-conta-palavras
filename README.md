@@ -123,6 +123,8 @@ npm run dev:error
 ┃ ┃ ┃   ┗ Infraestrutura: Leitura de arquivos (fs)
 ┃ ┃ ┗ 📜 fs-write-file.js
 ┃ ┃     ┗ Infraestrutura: Escrita de arquivos e criação de diretórios
+┃ ┃ ┣ 📜 report-generator.js
+┃ ┃ ┃   ┗ Cria um relatório textual
 ┃ ┗ 📜 cli.js
 ┃     ┗ Entry point (Ponto de entrada) da aplicação
 ┣ 📜 package.json
