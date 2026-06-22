@@ -8,7 +8,7 @@
   "type": "module",
   "scripts": {
     "start": "node src/cli.js",
-    "dev": "cross-env NODE_ENV=development node src/cli.js -t arquivos/texto-web.txt",
+    "dev": "cross-env NODE_ENV=development node src/cli.js -t arquivos/texto-nodejs.txt",
     "dev:error": "cross-env NODE_ENV=development node src/cli.js -t arquivos/fantasma.txt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
