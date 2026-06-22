@@ -1,3 +1,5 @@
+import { stopWords } from '../utils/stop-words.js';
+
 /**
  * Regra de negócio: Analisa um texto, extrai as palavras,
  * ignora palavras com menos de 3 caracteres e conta as repetições.
@@ -10,7 +12,7 @@ export function countWords(text) {
   const rawWords = text.toLowerCase().match(regexLetters) ?? [];
 
   const frequencyWords = rawWords.reduce((acc, word) => {
-    if (word.length >= 3) {
+    if (word.length >= 3 && !stopWords.has(word)) {
       acc[word] = (acc[word] || 0) + 1;
     }
     return acc;
